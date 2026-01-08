@@ -1,0 +1,778 @@
+/* Palette 21st.dev Premium - Midnight Glass */
+:root {
+    --bg-deep: #020617;
+    /* Slate 950 */
+    --glass-panel: rgba(15, 23, 42, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    /* Mais sutil */
+
+    --primary-blue: #3b82f6;
+    --primary-glow: rgba(59, 130, 246, 0.4);
+    --primary-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 50%, #2563eb 100%);
+
+    --text-white: #ffffff;
+    --text-muted: #94a3b8;
+
+    --card-surface: rgba(30, 41, 59, 0.4);
+    --card-hover: rgba(51, 65, 85, 0.6);
+
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.3);
+    --shadow-glow: 0 0 25px rgba(59, 130, 246, 0.15);
+}
+
+/* --- Consolidated Light Theme: Matte Silver & Minimalist --- */
+[data-theme="light"] {
+    --bg-deep: linear-gradient(135deg, #f8fafc 0%, #cbd5e1 100%);
+    --glass-panel: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.6);
+
+    --primary-blue: #3b82f6;
+    --primary-glow: rgba(59, 130, 246, 0.2);
+    --primary-gradient: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+
+    --text-white: #0f172a;
+    /* Sharp dark text */
+    --text-muted: #475569;
+    /* Slate 600 */
+
+    --card-surface: rgba(255, 255, 255, 0.5);
+    --card-hover: rgba(255, 255, 255, 0.82);
+
+    --shadow-soft: 0 8px 32px rgba(31, 38, 135, 0.07);
+    --shadow-glow: none;
+}
+
+[data-theme="light"] #wpp-sidebar {
+    background: var(--bg-deep);
+    color: var(--text-white);
+    font-family: 'Inter', sans-serif;
+    box-shadow: -10px 0 60px rgba(0, 0, 0, 0.05);
+    /* Softer shadow */
+}
+
+/* Header & Logo */
+[data-theme="light"] .sidebar-header {
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .logo-container-ayra {
+    filter: none;
+}
+
+[data-theme="light"] .logo-ayra-text {
+    color: #1e293b;
+    text-shadow: none;
+}
+
+/* Lead Card: Frosted Glass */
+[data-theme="light"] .lead-card.premium-glass {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .lead-name {
+    color: #0f172a;
+    text-shadow: none;
+    letter-spacing: -0.03em;
+}
+
+[data-theme="light"] .lead-initial-avatar {
+    background: #ffffff;
+    color: #3b82f6;
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    text-shadow: none;
+}
+
+/* Badges & Actions */
+[data-theme="light"] .lead-tag {
+    font-weight: 600;
+    border: none;
+}
+
+[data-theme="light"] .lead-tag.niche {
+    background: #eff6ff;
+    color: #3b82f6;
+}
+
+[data-theme="light"] .lead-tag.city {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+[data-theme="light"] .lead-action-btn {
+    background: #ffffff;
+    border: 1px solid transparent;
+    color: #94a3b8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+[data-theme="light"] .lead-action-btn:hover {
+    background: #eff6ff;
+    color: #3b82f6;
+    border-color: rgba(59, 130, 246, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Shortcuts: Clean & Smooth */
+[data-theme="light"] .wpp-btn.shortcut {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    color: #1e293b;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="light"] .wpp-btn.shortcut div:first-child {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] .wpp-btn.shortcut:hover {
+    background: #ffffff;
+    border-color: #cbd5e1;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.05);
+    transform: translateY(-3px);
+}
+
+/* Loading Spinner */
+[data-theme="light"] .ai-spinner {
+    border-top-color: #3b82f6;
+}
+
+/* Filter Buttons Light Mode */
+[data-theme="light"] .filter-btn {
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .filter-btn:hover {
+    background: rgba(0, 0, 0, 0.03);
+    color: #0f172a;
+}
+
+[data-theme="light"] .filter-btn.active {
+    background: #eff6ff;
+    border-color: #3b82f6;
+    color: #3b82f6;
+}
+
+/* Scrollbar Light Mode */
+[data-theme="light"] #wpp-shortcuts-grid::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] #wpp-shortcuts-grid::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    /* Slate 300 */
+}
+
+/* Premium Button Light Mode Contrast */
+[data-theme="light"] .wpp-btn.premium {
+    color: white !important;
+    /* Force white text for premium gradient */
+}
+
+
+/* Sidebar Principal */
+#wpp-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100vh;
+    background: var(--bg-deep);
+    border-left: 1px solid var(--glass-border);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-white);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    box-shadow: -10px 0 60px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    /* Hardware acceleration */
+}
+
+/* Header */
+.sidebar-header {
+    padding: 16px 24px;
+    /* Reduced from 40px 32px 24px */
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.8), transparent);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(to right, #ffffff 20%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Standard property */
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Ayra Logo Style --- */
+.logo-container-ayra {
+    display: flex;
+    flex-direction: row;
+    /* Horizontal layout */
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0px;
+    /* Reduced margin */
+    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.3));
+}
+
+.logo-ayra-img {
+    width: 32px;
+    /* Scale down from 64px */
+    height: 32px;
+    object-fit: contain;
+}
+
+.logo-ayra-text {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    /* Reduced from 1.8rem */
+    color: #fff;
+    letter-spacing: -0.5px;
+    text-align: left;
+    /* Changed from center */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+    position: absolute;
+    top: 14px;
+    /* Adjusted for compact header */
+    right: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-white);
+    width: 32px;
+    /* Slightly smaller */
+    height: 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    z-index: 20;
+}
+
+.theme-toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+[data-theme="light"] .theme-toggle-btn {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Conteúdo */
+.sidebar-content {
+    padding: 10px 32px 32px;
+    /* Aumentado top padding para descer o conteúdo */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+/* Seções */
+.section h3 {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    /* Linha removida a pedido */
+}
+
+/* Filter Tabs */
+.filter-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.filter-btn {
+    flex: 1;
+    background: transparent;
+    border: 1px solid var(--glass-border);
+    color: var(--text-muted);
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-white);
+}
+
+.filter-btn.active {
+    background: rgba(59, 130, 246, 0.2);
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+/* Grids */
+#wpp-shortcuts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-height: 280px;
+    /* Mostra aprox 3 linhas (6 itens) */
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+/* Custom Scrollbar */
+#wpp-shortcuts-grid::-webkit-scrollbar {
+    width: 5px;
+}
+
+#wpp-shortcuts-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+#wpp-shortcuts-grid::-webkit-scrollbar-thumb {
+    background: var(--primary-blue);
+    border-radius: 10px;
+}
+
+#wpp-shortcuts-grid>button {
+    width: calc(50% - 6px);
+    /* 50% menos metade do gap */
+}
+
+/* Botões Genéricos */
+.wpp-btn {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--card-surface);
+    color: var(--text-white);
+    backdrop-filter: blur(8px);
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* Important structure fix */
+}
+
+.wpp-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.wpp-btn:hover {
+    background: var(--card-hover);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.wpp-btn:hover::before {
+    opacity: 1;
+}
+
+.wpp-btn:active {
+    transform: translateY(0);
+}
+
+/* Botão Premium (Chamar IA) */
+.wpp-btn.premium {
+    background: var(--primary-gradient);
+    border: none;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 10px 30px -5px rgba(59, 130, 246, 0.4);
+    letter-spacing: -0.01em;
+}
+
+.wpp-btn.premium:hover {
+    box-shadow: 0 20px 40px -10px rgba(59, 130, 246, 0.6);
+    filter: brightness(1.05);
+    /* Mais brilho sem mudar cor */
+}
+
+/* Atalhos estilo Cards */
+.wpp-btn.shortcut {
+    justify-content: flex-start;
+    padding: 18px 20px;
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: left;
+    height: auto;
+    min-height: 80px;
+    /* Card mais alto */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.wpp-btn.shortcut:hover {
+    background: rgba(59, 130, 246, 0.15);
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+}
+
+.wpp-btn.shortcut::after {
+    /* Ícone decorativo ou texto "Enviar" */
+    content: 'Enviar agora';
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: auto;
+}
+
+.wpp-btn.shortcut:hover::after {
+    color: var(--primary-blue);
+}
+
+/* Drag and Drop Styles */
+.wpp-btn.shortcut {
+    cursor: grab;
+    /* Mãozinha aberta */
+}
+
+.wpp-btn.shortcut:active {
+    cursor: grabbing;
+    /* Mãozinha fechada */
+}
+
+.wpp-btn.shortcut.dragging {
+    opacity: 0.5;
+    transform: scale(0.95);
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px dashed var(--primary-blue);
+    box-shadow: none;
+}
+
+/* Hover Button na Mensagem */
+.wpp-save-hover-btn {
+    position: absolute;
+    /* right: -12px; removido */
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%) scale(0.6);
+    background: var(--primary-gradient);
+    color: white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px var(--primary-glow);
+    z-index: 99999;
+    font-size: 20px;
+    font-weight: 300;
+    border: 2px solid #0f172a;
+    /* Borda para contraste */
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Message IN (Recebida - esquerda): Botão na DIREITA */
+.message-in:hover .wpp-save-hover-btn {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+    left: auto;
+    right: -45px;
+    /* Lado de fora, à direita */
+}
+
+/* Message OUT (Enviada - direita): Botão na ESQUERDA */
+.message-out:hover .wpp-save-hover-btn {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+    right: auto;
+    left: -45px;
+    /* Lado de fora, à esquerda */
+}
+
+.wpp-save-hover-btn:hover {
+    transform: translateY(-50%) scale(1.15) rotate(90deg);
+}
+
+/* Modal */
+#wpp-naming-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(20px);
+    padding: 32px;
+    border-radius: 24px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+    z-index: 11000;
+    animation: modalSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalSlideUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+#wpp-naming-modal h3 {
+    margin: 0 0 12px;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+#wpp-naming-modal input {
+    width: 100%;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    color: white;
+    margin: 24px 0;
+    outline: none;
+    font-size: 16px;
+    transition: 0.2s;
+    box-sizing: border-box;
+    /* Fix padding */
+}
+
+#wpp-naming-modal input:focus {
+    border-color: var(--primary-blue);
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+#wpp-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(2, 6, 23, 0.8);
+    backdrop-filter: blur(8px);
+    z-index: 10999;
+}
+
+/* --- CRM Lead Info Style (Premium) --- */
+#wpp-lead-info {
+    min-height: 0;
+    padding-bottom: 0;
+}
+
+.premium-glass {
+    background: linear-gradient(145deg, rgba(10, 15, 25, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(59, 130, 246, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.premium-glass::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-12px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.lead-header-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Aumentado de 16px */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.lead-initial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    /* Square with rounded corners for a modern look */
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 800;
+    font-family: 'Orbitron', sans-serif;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    box-shadow: inset 0 0 10px rgba(59, 130, 246, 0.1), 0 0 15px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.lead-avatar-container {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.lead-info-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    /* Text truncation fix */
+}
+
+.lead-name {
+    margin: 0 0 20px 0;
+    /* Aumentado drasticamente para 20px (Feedback: "tá muito colado") */
+    color: var(--text-white);
+    font-size: 24px;
+    /* Aumentado para 24px para destaque total */
+    font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.lead-tags-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    /* Aumentado para 12px */
+}
+
+.lead-tag {
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    /* Aumentado para 12px */
+    padding: 6px 14px;
+    /* Mais padding */
+    border-radius: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.lead-tag.niche {
+    color: var(--primary-blue);
+    background: rgba(59, 130, 246, 0.15);
+    /* Fundo um pouco mais forte */
+}
+
+
+.lead-tag.city {
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.03);
+    text-transform: none;
+    /* Cidade com CamelCase */
+    letter-spacing: normal;
+}
+
+.lead-actions-col {
+    display: flex;
+    align-items: center;
+}
+
+.lead-action-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--primary-blue);
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.lead-action-btn:hover {
+    background: var(--primary-blue);
+    border-color: var(--primary-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+    color: white;
+}
+
+/* Obsolete grid removed */
+
+.lead-empty,
+.lead-error {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: center;
+    padding: 12px;
+    background: rgba(2, 6, 23, 0.6);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}

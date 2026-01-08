@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build and Tokens
+backend/tokens/
+backend/qr.png
+backend/logs.txt
+
+# Extension build
+extension/*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
